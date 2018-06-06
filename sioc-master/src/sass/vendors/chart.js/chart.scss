@@ -1,0 +1,48 @@
+// Import variables
+@import "../variables";
+
+.chart-legend,
+.bar-legend,
+.line-legend,
+.pie-legend,
+.radar-legend,
+.polararea-legend,
+.doughnut-legend {
+  padding-left: 0;
+  margin-top: 5px;
+  text-align: center;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+}
+.chart-legend li,
+.bar-legend li,
+.line-legend li,
+.pie-legend li,
+.radar-legend li,
+.polararea-legend li,
+.doughnut-legend li {
+  position: relative;
+  display: inline-block;
+  padding: 2px 8px 2px 28px;
+  margin-bottom: 4px;
+  font-size: smaller;
+  white-space: nowrap;
+  @include border-radius($border-radius);
+  cursor: default;
+}
+.chart-legend li span,
+.bar-legend li span,
+.line-legend li span,
+.pie-legend li span,
+.radar-legend li span,
+.polararea-legend li span,
+.doughnut-legend li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  @include border-radius($border-radius);
+}

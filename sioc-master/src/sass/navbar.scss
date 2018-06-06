@@ -1,0 +1,44 @@
+@import "palette";
+
+.navbar {
+  // padding: 20px;
+  margin-bottom: 0;
+  background: transparent;
+  border-bottom: 0;
+
+  .menu-underline {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    font-size: 13px;
+    font-weight: 400;
+    color: $secondary-text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.4s, color 0.1s, background-color 0.1s;
+    &:hover {
+      color: $azul-sioc !important;
+      text-decoration: none;
+    }
+  }
+
+  .menu-underline::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    content: "";
+    background-color: $azul-sioc;
+    transition: color 0.1s,transform 0.2s ease-out;
+    transform: scale(0, 1);
+    transform-origin: right top;
+  }
+  .menu-underline:active::before {
+    background-color: $azul-sioc;
+  }
+  .menu-underline:hover::before, .menu-underline:focus::before {
+    transform: scale(1, 1);
+    transform-origin: left top;
+  }
+}

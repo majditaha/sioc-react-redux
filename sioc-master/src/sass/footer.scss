@@ -1,0 +1,39 @@
+footer {
+  // position: absolute;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
+  min-height: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #fafafa;
+  border-top: 1px solid $divider-color;
+
+  div.row > div {
+    margin-top: 10px;
+    color: $divider-color;
+  }
+
+  p {
+    padding-top: 10px;
+  }
+
+  .version {
+    font-size: 10px;
+  }
+  .col-sm-2 {
+    padding: 0;
+  }
+  small {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 8pt;
+    line-height: 8pt;
+  }
+
+  i {
+    padding: 20px 20px 20px 0;
+    font-size: 18px !important;
+    color: $azul-sioc;
+  }
+}
